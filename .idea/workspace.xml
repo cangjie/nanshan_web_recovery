@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a865b5-0818-4604-84aa-10976c65fb66" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/img/20211120121946.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/20211120121946.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/20211120121959.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/20211120121959.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/20211120122004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/20211120122004.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="79a865b5-0818-4604-84aa-10976c65fb66" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -117,16 +112,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637392727867</updated>
-      <workItem from="1637392729460" duration="677000" />
+      <workItem from="1637392729460" duration="1015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="677000" />
+    <option name="totallyTimeSpent" value="1015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="974" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />

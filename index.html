@@ -1,38 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/fullplay.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,user-scalable=no" name="viewport"> 
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+
 </head>
 <body>
 
-<div id="bodyBox">
+<div class="mBan2">
+	<div id="slideBox" class="slideBox">
 
-	<div id="bodyPage">
-   	  <img src="images/20211120121946.jpg" class="bg">
-      <img src="images/20211120121959.jpg" class="bg">
-      <img src="images/20211120122004.jpg" class="bg">
-    </div>
-    <div class="weixin">
-    	<img src="images/20211120122008.jpg" width="200" height="200" />
-    </div>
+		<div class="bd">
+			<ul>
+				<li><a href="#" target="_blank"><img src="images/20211120121946.jpg" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/20211120121959.jpg" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/20211120122004.jpg" /></a></li>
+			</ul>
+		</div>
+		<div class="weixin">
+			<img src="images/20211120122008.jpg" width="200" height="200" />
+		</div>
+	</div>
+
 </div>
 
 <script type="text/javascript">
-$(document).ready(function(e) {
-    
-   $("#bodyPage").fullImages({
-	   ImgWidth: 1200,
-	   ImgHeight: 550,
-	   autoplay :  3500,
-	   fadeTime : 1500
-   });
-	
-});
+jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
 </script>
-
-
 
 </body>
 </html>

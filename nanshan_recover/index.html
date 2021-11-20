@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" >
+        var opacity = 0;
+        var current_image = 'WechatIMG85.jpeg';
+        var will_change = false;
+        function change() {
+            var img1 = document.getElementById('img1');
+            img1.src = current_image;
+            img1.style.opacity = opacity;
+            if (!will_change){
+                opacity = opacity + 0.01;
+            }
+            else {
+                opacity = opacity - 0.01;
+            }
+            if (opacity >= 1){
+                will_change = true;
+            }
+            if (opacity <= 0){
+                will_change = false;
+                if (current_image == 'WechatIMG85.jpeg'){
+                    current_image = 'WechatIMG84.jpeg';
+                }
+                else {
+                    current_image = 'WechatIMG85.jpeg';
+                }
+            }
+
+
+        }
+        window.onload = function() {
+            document.getElementById('img1').style.height = parseInt(parseFloat(document.body.offsetHeight) * 0.9).toString()+'px';
+            //img2.style.height = parseInt(parseFloat(document.body.offsetHeight) * 0.9).toString()+'px';
+            //img2.style.position = img1.style.position;
+
+
+        }
+
+    </script>
+</head>
+<body style="margin-top: 0px">
+    <div style="text-align: center; margin-top: 0px;">
+        <img id="img1" name="home-page-images" src="WechatIMG85.jpeg"  style="margin-top: 0px;opacity:0"/>
+        <!--img id="img2" name="home-page-images" src="WechatIMG85.jpeg"  style="margin-top: 0px"/-->
+    </div>
+</body>
+<script type="application/javascript" >
+    setInterval(change, 100);
+</script>
+</html>
